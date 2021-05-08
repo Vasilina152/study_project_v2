@@ -4,6 +4,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// const example = <h1 className="test">Hello World!</h1>;
+
+// const example2 = React.createElement("h3", null, "Привет Мир!");
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
