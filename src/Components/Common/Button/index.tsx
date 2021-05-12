@@ -10,10 +10,6 @@ interface IProps {
 }
 
 class Button extends React.PureComponent<IProps> {
-  // componentDidMount() {
-  //   console.log("Button mount");
-  // }
-
   render() {
     const { title, count, handler, type, limit } = this.props;
 
