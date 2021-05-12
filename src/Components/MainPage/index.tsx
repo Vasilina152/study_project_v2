@@ -16,6 +16,7 @@ class MainPage extends React.Component<any, any> {
         <div className={style.main_page_wrapper}>
           <Header />
           <CustomCounter title="Apple" limit={9} />;
+          <CustomCounter title="Orange" limit={5} />;
           <Footer />
         </div>
       </>
