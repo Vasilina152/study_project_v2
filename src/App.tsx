@@ -1,10 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import CardList from "./Lesson2";
+import MainPage from "./Components/MainPage";
 
 function App() {
-  return <CardList />;
+  return <MainPage />;
 }
 
 export default App;
