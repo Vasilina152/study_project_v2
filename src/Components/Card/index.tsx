@@ -6,7 +6,19 @@ interface IProps {
   count: number;
 }
 
-class ProductCard extends React.PureComponent<IProps> {
+class ProductCard extends React.Component<IProps> {
+  constructor(props: any) {
+    super(props);
+    this.state = {};
+  }
+
+  shouldComponentUpdate(nextProps: any) {
+    if (nextProps.count === 4) {
+      return false;
+    }
+    return true;
+  }
+
   render() {
     const { title, count, children } = this.props;
 

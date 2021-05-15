@@ -18,6 +18,18 @@ class CustomCounter extends React.Component<IProps, IState> {
     this.state = { count: 0, increment: 1, decrement: 1 };
   }
 
+  componentDidMount() {
+    document.addEventListener("click", this.popUp);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("click", this.popUp);
+  }
+
+  popUp = () => {
+    alert("Hello");
+  };
+
   incrementHandle = (increment: number) => () => {
     const { count } = this.state;
     this.setState({ count: count + increment });
