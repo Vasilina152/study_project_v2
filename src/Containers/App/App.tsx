@@ -1,8 +1,12 @@
 import React from "react";
-import MainPageContainer from "../MainPageContainer";
+import AuthPageContainer from "../AuthPageContainer";
+// import MainPageContainer from "../MainPageContainer";
 
 function App() {
-  return <MainPageContainer />;
+  return (
+    // <MainPageContainer />
+    <AuthPageContainer />
+  );
 }
 
 export default App;

@@ -12,15 +12,11 @@ class MainPage extends React.Component<any, any> {
 
   render() {
     return (
-      <>
-        <div className={style.main_page_wrapper}>
-          <Header />
-
-          <CustomCounter title="Apple" limit={9} />
-
-          <Footer />
-        </div>
-      </>
+      <div className={style.main_page_wrapper}>
+        <Header />
+        <CustomCounter title="Apple" limit={9} />
+        <Footer />
+      </div>
     );
   }
 }
