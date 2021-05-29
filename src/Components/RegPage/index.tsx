@@ -1,16 +1,12 @@
 import React, { FC } from "react";
-import Footer from "../Common/Footer";
-import Header from "../Common/Header";
 import RegForm from "./RegForm";
-import style from "./RegPage.module.scss";
+import PageWrapper from "../Common/Wrappers/PageWrapper";
 
 const RegPage: FC = () => {
   return (
-    <div className={style.reg_page_wrapper}>
-      <Header />
+    <PageWrapper>
       <RegForm />
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

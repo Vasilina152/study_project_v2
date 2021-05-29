@@ -1,8 +1,6 @@
 import React from "react";
-import Footer from "../Common/Footer";
-import Header from "../Common/Header";
 import CustomCounter from "../Counter";
-import style from "./MainPage.module.scss";
+import PageWrapper from "../Common/Wrappers/PageWrapper";
 
 class MainPage extends React.Component<any, any> {
   constructor(props: any) {
@@ -12,11 +10,9 @@ class MainPage extends React.Component<any, any> {
 
   render() {
     return (
-      <div className={style.main_page_wrapper}>
-        <Header />
+      <PageWrapper>
         <CustomCounter title="Apple" limit={9} />
-        <Footer />
-      </div>
+      </PageWrapper>
     );
   }
 }
