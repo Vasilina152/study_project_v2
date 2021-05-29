@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "./NavMenu.module.scss";
 
 class NavMenu extends React.PureComponent {
@@ -8,9 +9,15 @@ class NavMenu extends React.PureComponent {
         <nav className={style.nav_wrapper}>
           <ul className={style.nav_list}>
             <li>О нас</li>
-            <li>Главная</li>
-            <li>Блог</li>
-            <li>Новости</li>
+            <li>
+              <Link to="/">Главня</Link>
+            </li>
+            <li>
+              <Link to="/auth">Авторизация</Link>
+            </li>
+            <li>
+              <Link to="/reg">Регистрация</Link>
+            </li>
           </ul>
         </nav>
       </>

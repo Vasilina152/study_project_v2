@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Logo.module.scss";
 import logo from "../../../../assets/image/logo.svg";
 
-class Header extends React.PureComponent {
+class HeaderLogo extends React.PureComponent {
   render() {
     return (
       <>
@@ -14,4 +14,4 @@ class Header extends React.PureComponent {
   }
 }
 
-export default Header;
+export default HeaderLogo;
